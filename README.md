@@ -1,0 +1,2 @@
+# VkChat
+VKontakte MacOS client
