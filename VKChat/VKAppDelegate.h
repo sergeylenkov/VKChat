@@ -58,7 +58,6 @@
 - (void)updateUnreadCount;
 
 - (IBAction)preferences:(id)sender;
-- (IBAction)about:(id)sender;
 
 - (IBAction)newDialog:(id)sender;
 - (IBAction)deleteDialog:(id)sender;

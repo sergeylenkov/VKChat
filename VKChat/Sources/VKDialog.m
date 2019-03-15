@@ -488,7 +488,7 @@
         }
     }
     
-    [GrowlApplicationBridge notifyWithTitle:notificationTitle description:notificationBody notificationName:@"New message" iconData:nil priority:0 isSticky:NO clickContext:nil];
+    //[GrowlApplicationBridge notifyWithTitle:notificationTitle description:notificationBody notificationName:@"New message" iconData:nil priority:0 isSticky:NO clickContext:nil];
 }
 
 - (void)didDeleteMessage {

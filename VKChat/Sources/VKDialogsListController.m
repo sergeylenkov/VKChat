@@ -156,38 +156,6 @@
     [request startWithResultBlock:resultBlock failureBlock:failureBlock];
 }
 
-!@    __block VKGetDialogsRequest *request = [[VKGetDialogsRequest alloc] init];
-
-    request.accessToken = [VKAccessToken token];
-    request.offset = 0;
-    request.count = 1;
-
-    VKGetDialogsRequestResultBlock resultBlock = ^(NSArray *dialogs) {
-        NSMutableArray *temp = [[NSMutableArray alloc] init];
-		
-        for (VKDialog *dialog in dialogs) {
-            if (![self isDialogExists:dialog]) {
-				[temp addObject:dialog];
-			}
-        }
-
-        if ([temp count] > 0) {
-            [_dialogs addObjectsFromArray:temp];
-        }
-	
-		[self updateProfiles];
-        
-        [temp release];
-        [request release];
-    };
-    
-    VKRequestFailureBlock failureBlock = ^(NSError *error) {
-        [request release];
-    };
-    
-    [request startWithResultBlock:resultBlock failureBlock:failureBlock];
-}
-
 - (void)updateProfiles {
     [profilesInProgress removeAllObjects];
 	NSArray *temp = [NSArray arrayWithArray:_dialogs];

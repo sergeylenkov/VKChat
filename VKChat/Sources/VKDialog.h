@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Growl/Growl.h>
+//#import <Growl/Growl.h>
 #import "VKProfile.h"
 #import "VKMessage.h"
 #import "VKMessagesHistoryRequest.h"

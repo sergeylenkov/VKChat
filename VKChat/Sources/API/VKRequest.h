@@ -24,6 +24,7 @@ typedef void (^VKRequestFailureBlock)(NSError *error);
     NSString *_apiURI;
     NSString *_method;
     NSString *_accessToken;
+    NSString *_version;
     NSMutableArray *_parameters;
     ASIHTTPRequest *_request;
     VKRequestFailureBlock _failureBlock;

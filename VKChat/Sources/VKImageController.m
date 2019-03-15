@@ -20,7 +20,7 @@
 - (void)showWindow:(id)sender {
     imageView.image = nil;
     
-    NSRect frame = [[NSApp delegate] window].frame;
+    NSRect frame = [[NSApplication sharedApplication] mainWindow].frame;
     
     frame.origin.x = (frame.origin.x + (frame.size.width / 2));
     frame.origin.y = (frame.origin.y + (frame.size.height / 2));
@@ -71,7 +71,7 @@
     rect.size.width = width;
     rect.size.height = height + 20;
     
-    NSRect frame = [[NSApp delegate] window].frame;
+    NSRect frame = [[NSApplication sharedApplication] mainWindow].frame;
     
     rect.origin.x = (frame.origin.x + (frame.size.width / 2)) - (width / 2);
     rect.origin.y = (frame.origin.y + (frame.size.height / 2)) - (height / 2);

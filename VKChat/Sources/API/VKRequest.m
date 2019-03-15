@@ -42,10 +42,12 @@
     _parameters = [[NSMutableArray alloc] init];
     _method = @"";
     _accessToken = @"";
+    _version = @"5.0";
     _responseType = VKRequestResponseTypeJSON;
     _error = nil;
-    self.showResponseLog = NO;
-    self.showRequestLog = NO;
+    
+    self.showResponseLog = YES;
+    self.showRequestLog = YES;
 }
 
 - (void)addParamWithKey:(id)key value:(id)value {
@@ -64,7 +66,7 @@
         _method = [_method stringByAppendingString:@".xml"];
     }
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?%@access_token=%@", _apiURI, _method, params, _accessToken]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?%@access_token=%@&v=%@", _apiURI, _method, params, _accessToken, _version]];
     
     _request = [[ASIHTTPRequest alloc] initWithURL:url];
     _request.timeOutSeconds = 60;

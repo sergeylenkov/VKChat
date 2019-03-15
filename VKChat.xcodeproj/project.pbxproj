@@ -25,9 +25,7 @@
 		A54D6B9D168F6DF5003E069F /* VKPhotosItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A54D6B9C168F6DF5003E069F /* VKPhotosItemView.m */; };
 		A54D6BA4168F6E8E003E069F /* VKAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54D6BA3168F6E8E003E069F /* VKAlbumController.m */; };
 		A54D6BA6168F6F7E003E069F /* AlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54D6BA5168F6F7E003E069F /* AlbumView.xib */; };
-		A54D6BB016903F64003E069F /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54D6BAF16903F64003E069F /* Growl.framework */; };
 		A54D6BB316903F75003E069F /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = A54D6BB216903F75003E069F /* Growl Registration Ticket.growlRegDict */; };
-		A54D6BB5169040C7003E069F /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A54D6BAF16903F64003E069F /* Growl.framework */; };
 		A55D461C1573F05700F31171 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55D461B1573F05700F31171 /* Quartz.framework */; };
 		A5CC757C155D73F5006C8F6E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CC757B155D73F5006C8F6E /* SystemConfiguration.framework */; };
 		A5CC757F155D740C006C8F6E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CC757E155D740C006C8F6E /* libz.dylib */; };
@@ -417,19 +415,6 @@
 		A5F1192F1598DCEE004E98DF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F1192E1598DCEE004E98DF /* CoreAudio.framework */; };
 		A5FF6F3F1665356A00BF2D12 /* OutputIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A5FF6F3E1665356A00BF2D12 /* OutputIcon.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A54D6BB4169040B4003E069F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A54D6BB5169040C7003E069F /* Growl.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A51D7958155C375D00D11A21 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -1013,7 +998,6 @@
 				A5CC757C155D73F5006C8F6E /* SystemConfiguration.framework in Frameworks */,
 				A51D7959155C375D00D11A21 /* WebKit.framework in Frameworks */,
 				A5E217DF15598DF600799E15 /* Cocoa.framework in Frameworks */,
-				A54D6BB016903F64003E069F /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1797,7 +1781,6 @@
 				A5E217D615598DF600799E15 /* Sources */,
 				A5E217D715598DF600799E15 /* Frameworks */,
 				A5E217D815598DF600799E15 /* Resources */,
-				A54D6BB4169040B4003E069F /* CopyFiles */,
 			);
 			buildRules = (
 			);
